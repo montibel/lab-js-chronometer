@@ -26,8 +26,14 @@ class Chronometer {
   }
 
   computeTwoDigitNumber(value) {
-    // ... your code goes here
+  let valueString = value.toString();
+
+  if(valueString.length === 1) {
+    return ("0") + valueString;
+  } else {
+    return valueString;
   }
+ }
 
   stop() {
     // ... your code goes here

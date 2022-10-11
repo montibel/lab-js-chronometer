@@ -14,10 +14,15 @@ class Chronometer {
   
   }
 
-  getMinutes() {}
+  getMinutes() {
+    let secondsTominutes = Math.floor(this.currentTime/60);
+    return secondsTominutes;
+
+  }
 
   getSeconds() {
-    // ... your code goes here
+    let minutesToseconds = Math.floor(this.currentTime%60);
+    return minutesToseconds;
   }
 
   computeTwoDigitNumber(value) {
